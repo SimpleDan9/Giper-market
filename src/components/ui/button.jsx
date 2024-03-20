@@ -1,11 +1,15 @@
 import clsx from "clsx"
 
 
-const Button = ({variant,children}) => {
+const Button = ({variant,children,icon:Icon,type,onclick}) => {
   return (
-    <button className={clsx("p-[10px]",{
-      "bg-yellow-400": variant === "primary"
+    <button
+    type={type}
+    onClick={onclick}
+     className={clsx("py-[10px] px-[30px] flex items-center justify-start gap-[10px] font-jost text-[20px] font-normal leading -[29px]",{
+      "bg-yellow-300 p-[20px]": variant === "primary"
     })}>
+      {Icon?Icon:""}
       {children}
     </button>
   )

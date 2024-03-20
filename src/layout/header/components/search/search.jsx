@@ -2,7 +2,7 @@
 function Search() {
   return (
     <div>
-      Search
+      <input className="w-[673px] outline-2 border-input" type="text" />
     </div>
   );
 }

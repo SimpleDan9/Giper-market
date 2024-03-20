@@ -6,6 +6,12 @@ export default {
   ],
   theme: {
     extend: {
+      colors:{
+        input:"#857372"
+      },
+      fontFamily:{
+        jost:["Jost"," sans-serif"]
+      },
       container:{
         center:true,
         padding:"20px",
