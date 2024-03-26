@@ -4,21 +4,21 @@ import Footer from "./footer/footer";
 
 function AppLayout() {
   return (
-    
-     <div className="h-screen flex flex-col justify-between">
-      <div className="wrapper">
+
+    <div className="h-screen flex flex-col justify-between">
+      <div>
         <header>
-          <Header/>
+          <Header />
         </header>
-          <main>
-        {Outlet}
+        <main>
+          <Outlet />
         </main>
-     </div>
+      </div>
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
-     </div>
-  
+    </div>
+
   );
 }
 
